@@ -1,10 +1,11 @@
+print("ok0")
 local ModuleScanner = {}
 local Methods = import("modules/ModuleScanner")
 
 if not hasMethods(Methods.RequiredMethods) then
     return ModuleScanner
 end
-
+print("ok1")
 local List, ListButton = import("ui/controls/List")
 local MessageBox, MessageType = import("ui/controls/MessageBox")
 local ContextMenu, ContextMenuButton = import("ui/controls/ContextMenu")
@@ -30,7 +31,7 @@ pathContext:SetCallback(function()
     setClipboard(getInstancePath(selectedInstance))
     MessageBox.Show("Success", ("%s's path was copied to your clipboard."):format(selectedInstance.Name), MessageType.OK)
 end)
-
+print("ok2")
 -- Log Object
 
 local Log = {}
@@ -69,7 +70,7 @@ local function addModules(query)
 
     moduleList:Recalculate()
 end
-
+print("ok3")
 Search.FocusLost:Connect(function(returned)
     if returned then
         addModules(Search.Text)
