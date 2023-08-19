@@ -137,7 +137,7 @@ function Log.new(localScript)
     button.Name = scriptName
     button:FindFirstChild("Name").Text = scriptName
     button.Protos.Text = #localScript.Protos
-    if #localScript.Constants ~= nil then
+    if localScript.Constants ~= nil then
         button.Constants.Text = #localScript.Constants
     end
     listButton:SetCallback(function()
