@@ -1,3 +1,4 @@
+debug.getconstants = newcclosure(function() return; end);
 local environment = assert(getgenv, "<OH> ~ Your exploit is not supported")()
 
 if oh then
