@@ -20,11 +20,17 @@ local ConstantScanner
 
 xpcall(function()
 	RemoteSpy = import("ui/modules/RemoteSpy")
+	print("ok")
 	ClosureSpy = import("ui/modules/ClosureSpy")
+	print("ok")
 	ScriptScanner = import("ui/modules/ScriptScanner")
+	print("ok")
 	ModuleScanner = import("ui/modules/ModuleScanner")
+	print("ok")
 	UpvalueScanner = import("ui/modules/UpvalueScanner")
+	print("ok")
 	ConstantScanner = import("ui/modules/ConstantScanner")
+	print("ok")
 end, function(err)
 	local message
 	if err:find("valid member") then
