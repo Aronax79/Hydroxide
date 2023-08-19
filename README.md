@@ -1,6 +1,6 @@
 ## Script
 ```lua
-local owner = "Upbolt"
+local owner = "Aronax79"
 local branch = "revision"
 
 local function webImport(file)
@@ -12,7 +12,7 @@ webImport("ui/main")
 ```
 
 # Hydroxide
-<i>General purpose pen-testing tool for games on the Roblox engine</i>
+<i>General purpose pen-testing tool for games on the Roblox engine by UpBolt</i>
 
 Report issues to our Discord server: https://discord.gg/DJxBwAX
 
