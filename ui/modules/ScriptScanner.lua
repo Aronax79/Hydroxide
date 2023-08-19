@@ -137,8 +137,9 @@ function Log.new(localScript)
     button.Name = scriptName
     button:FindFirstChild("Name").Text = scriptName
     button.Protos.Text = #localScript.Protos
-    button.Constants.Text = #localScript.Constants
-
+    if #localScript.Constants ~= nil then
+        button.Constants.Text = #localScript.Constants
+    end
     listButton:SetCallback(function()
         if selected.scriptLog ~= log then
             protosList:Clear()
